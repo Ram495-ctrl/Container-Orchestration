@@ -59,7 +59,7 @@ resource "aws_security_group" "web_sg" {
 
 # Launch an EC2 instance
 resource "aws_instance" "my_instance" {
-  ami           = "ami-04dd23e62ed049936"  # Replace with a valid AMI ID for your region
+  ami           = "ami-0c80e2b6ccb9ad6d1"  # Replace with a valid AMI ID for your region
   instance_type = "t3.large"               # Free tier eligible instance type
   key_name      = "ramasrinivas_key"           # Reference the existing key pair by its name
   security_groups = [aws_security_group.web_sg.name]  # Reference the security group
